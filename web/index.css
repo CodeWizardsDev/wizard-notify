@@ -22,22 +22,22 @@ body {
 
 .notification {
     padding: 20px;
-    color: #fff;
+    color: white;
     margin-bottom: 10px;
     opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Add transform transition */
-    transform: translateY(10px); /* Start slightly lower */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(10px);
 }
 
 .notification.show {
     opacity: 1;
-    transform: translateY(0); /* Move to original position */
-    animation: glow 1.5s infinite; /* Apply the glow animation */
+    transform: translateY(0);
+    animation: glow 1.5s infinite;
 }
 
 .notification.hide {
     opacity: 0;
-    transform: translateY(10px); /* Move down while fading out */
+    transform: translateY(10px);
 }
 
 .notification-header {

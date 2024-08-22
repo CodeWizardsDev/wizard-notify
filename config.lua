@@ -1,4 +1,3 @@
--- Configuration table for notifications
 Cfg = {}
 
 -- The position where notifications will appear
@@ -11,13 +10,15 @@ Cfg.Location = 'center-right'
 Cfg.Corners = 'rounded' 
 Cfg.CustomRadius = '15px'  -- Custom corner radius in pixels
 
--- Background color for notifications
+-- Background and text color for notifications
 -- Supports HEX and RGB formats (e.g., 'rgb(0, 0, 0)')
 Cfg.BackGround = '#333' 
+Cfg.TitleColor = '#fff' 
+Cfg.MessageColor = '#fff' 
 
 -- Divider settings between header and message
 Cfg.Divider = true  -- Enable or disable the divider
-Cfg.DeviderColor = 'gray'  -- Color of the divider (supports HEX and RGB)
+Cfg.DividerColor = 'gray'  -- Color of the divider (supports HEX and RGB)
 
 -- Border settings for notifications
 -- 'Cfg.BoarderSize' specifies the size of the borders with suffixes (e.g., 'px', '%')
@@ -54,7 +55,6 @@ Cfg.DefaultDuration = 5000
 
 -- Default title to use when no title is provided
 Cfg.DefaultTitle = "Code Wizards"  
-
 -- Force the use of the default title instead of a provided title
 Cfg.ForceDefaultTitle = false  
 

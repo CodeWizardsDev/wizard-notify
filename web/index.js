@@ -35,6 +35,7 @@ window.addEventListener('message', function(event) {
         
         const title = document.createElement('h1');
         title.className = 'notification-title';
+        title.style.color = event.data.tic;
         title.innerText = event.data.title || '';
         
         notificationHeader.appendChild(icon);
@@ -63,6 +64,7 @@ window.addEventListener('message', function(event) {
         
         const msg = document.createElement('p');
         msg.className = 'notification-message';
+        msg.style.color = event.data.tec;
         msg.innerText = event.data.message || '';
         
         notification.style.borderLeftColor = style.color;
@@ -77,7 +79,9 @@ window.addEventListener('message', function(event) {
         if (event.data.hr) {
             const breaker = document.createElement('hr');
             breaker.className = 'border';
+            breaker.style.Color = event.data.hrc || 'gray';
             breaker.style.backgroundColor = event.data.hrc || 'gray';
+            breaker.style.borderColor = event.data.hrc || 'gray';
             notification.appendChild(breaker);
         }
 
