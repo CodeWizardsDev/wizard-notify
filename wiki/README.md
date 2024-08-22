@@ -1,5 +1,4 @@
-## <p class=glow>Contents</p>
-
+## <p>Contents</p>
 - [Modifying the location](#loc)
 - [Modifying the corners](#corners)
 - [Custom background and text color](#bg-color)
@@ -7,16 +6,16 @@
 - [Glowing effect](#glow)
 - [Modifying the height and width](#height-width)
 - [Modifying Icons](#icon)
-- [Other Setttings](#other)
+- [Other Settings](#other)
 
 <br>
 <br>
 <br>
 
-## <p class=glow>Modifying The Location</p> <a name = "loc"></a>
+## <p>Modifying The Location</p> <a name = "loc"></a>
+- You can modify the location of the notification!
 
-- You are able to modify the location of the notification!
-1. For using the pre-added locations, simply find the following code in the config.lua file
+1. To use the pre-defined locations, find the following code in the `config.lua` file:
 
     ```lua
     Cfg.Location = 'center-right' 
@@ -24,7 +23,7 @@
 
 <br>
 
-2. Now you can set the `Cfg.Location` to the following values:
+2. Set `Cfg.Location` to one of the following values:
     - `'top'`
     - `'top-right'`
     - `'top-left'`
@@ -38,8 +37,9 @@
 <br>
 <br>
 
-- You can create custom locations or just modify the existing locations list
-1. Find the following code in the config.lua file
+- You can also create custom locations or modify the existing ones.
+
+1. Locate the following code in the `config.lua` file:
     ```lua
     Cfg.LocationMapping = {
         ['top'] = {right = '50%', top = '94%'},
@@ -54,18 +54,18 @@
     }
     ```
 
-2. Now modify any of the pre-made locations or make your own location!
+2. Modify any of the pre-defined locations or create your own!
 
 <br>
 
-3. For making your own custom location, you can modify 3 parameters:
-    - `'top'` ➡️ Distance from top of the screen 
-    - `'right'` ➡️ Distance from right
-    - `'left'` ➡️ Distance from left
+3. To create a custom location, you can adjust three parameters:
+    - `'top'` ➡️ Distance from the top of the screen 
+    - `'right'` ➡️ Distance from the right
+    - `'left'` ➡️ Distance from the left
 
 <br>
 
-4. If you want to change only one parameter, it is ok, by removing other parameters, the script will set their value to 'auto'. this makes the location system to work properly. if you are using any of the `'left'` or `'right'` tags, you don't have to use the other one and one of them is enough.
+4. If you want to change only one parameter, you can remove the others; the script will set their value to 'auto'. You only need to use either `'left'` or `'right'`, not both.
 
 <br>
 
@@ -79,7 +79,7 @@
     ```
 <br>
 
-6. And for applying the custom location tag to the script, modify the `'Cfg.Location'`, Example:
+6. To apply the custom location tag to the script, change `'Cfg.Location'`, for example:
 
     ```lua
     Cfg.Location = 'my-custom-location' 
@@ -89,25 +89,26 @@
 <br>
 <br>
 
-## <p class=glow>Modifying Corners</p> <a name = "corners"></a>
+## <p>Modifying Corners</p> <a name = "corners"></a>
 
-- You are able to make the corners round or etc. 
-1. Find the following code in the config.lua file
+- You can make the corners rounded or modify them.
+
+1. Find the following code in the `config.lua` file:
     ```lua
     Cfg.Corners = 'rounded'
     ```
 
 <br>
 
-2. Now simply change the value. there are 4 values available
-    - `'super-rounded'` ➡️ This will make the corners really really round!
-    - `'rounded'` ➡️ Just a normal rounded corners which i really like it! 
-    - `'custom'` ➡️ This will allow you to make your custom rounded corners :D
-    - `'normal'` ➡️ This option will remove rounded corners and make them normal
+2. Change the value to one of the following options:
+    - `'super-rounded'` ➡️ Very rounded corners!
+    - `'rounded'` ➡️ Normal rounded corners.
+    - `'custom'` ➡️ Allows for custom rounded corners.
+    - `'normal'` ➡️ Removes rounded corners.
 
 <br>
 
-3. If you want to apply a custom value, simply set the `Cfg.Corners` to `'custom'`, it should looks like this:
+3. To apply a custom value, set `Cfg.Corners` to `'custom'`:
 
     ```lua
     Cfg.Corners = 'custom'
@@ -115,7 +116,7 @@
 
 <br>
 
-4. Now find the following code from the config.lua file and modify the value to anything you want!
+4. Then find the following code in the `config.lua` file and modify the value:
 
     ```lua
     Cfg.CustomRadius = '15px'
@@ -125,10 +126,11 @@
 <br>
 <br>
 
-## <p class=glow>Custom Background & Text Color</p> <a name = "bg-color"></a>
+## <p>Custom Background & Text Color</p> <a name = "bg-color"></a>
 
-- You are able to change the background color of the notifications
-1. Find the following code in the config.lua file and then simply modify the value! Examples:
+- Change the background color of the notifications.
+
+1. Locate the following code in the `config.lua` file and modify the value:
 
     ```lua
     Cfg.BackGround = 'dimgrey'
@@ -148,11 +150,11 @@
 
 <br>
 
-2. Make sure to Adjust the texts color to make them visible!
+2. Ensure the text colors are adjusted for visibility!
 
 <br>
 
-3. For changing the texts color, find the following codes in the config.lua file and modify them as you want!
+3. To change the text colors, find the following codes in the `config.lua` file and modify them:
 
     ```lua
     Cfg.TitleColor = '#fff' 
@@ -165,8 +167,9 @@
 
 ## <p class=glow>Custom Divider Line</p> <a name = "divider"></a>
 
-- You are able to modify the divider line which it's between notifications header and notifications message!
-1. Find the following codes in the config.lua file
+- Modify the divider line between the notification header and message.
+
+1. Find the following codes in the `config.lua` file:
 
     ```lua
     Cfg.Divider = true
@@ -175,7 +178,7 @@
 
 <br>
 
-2. You can disable the divider line by setting `Cfg.Divider` to `'false'`, Example:
+2. Disable the divider line by setting `Cfg.Divider` to `false`, for example:
 
     ```lua
     Cfg.Divider = false
@@ -184,7 +187,7 @@
 
 <br>
 
-3. For changing the color of the divider, just change the `Cfg.Divider` value! Examples:
+3. To change the color of the divider, modify the `Cfg.DividerColor` value. Examples:
 
     ```lua
     Cfg.Divider = true
@@ -210,10 +213,11 @@
 <br>
 <br>
 
-## <p class=glow>Glowing effect</p> <a name = "glow"></a>
+## <p class=glow>Glowing Effect</p> <a name = "glow"></a>
 
-- You are able to have glowing effect around the notifications!
-1. <p>Find the following codes in the config.lua file and enable or disable it!</p>
+- Enable a glowing effect around the notifications!
+
+1. Find the following code in the `config.lua` file and enable or disable it:
 
     ```lua
     Cfg.Glowing = true
@@ -225,8 +229,9 @@
 
 ## <p class=glow>Modifying Height & Width</p> <a name = "height-width"></a>
 
-- You are able to modify everything about the height and weight!
-1. <p>Find the following codes in the config.lua file!</p>
+- Modify the height and width of the notifications.
+
+1. Find the following codes in the `config.lua` file:
 
     ```lua
     Cfg.MinHeight = 'auto'
@@ -240,23 +245,20 @@
 
 <br>
 
-2. <p>The <b>Cfg.MinHeight</b> and <b>Cfg.MinWidth</b> are designed to force the minimum possible size!</p>
-   
-   - <p>This means that when the <b>Cfg.MinWidth</b> is set to <b>'30px'</b>, the width can not be lower than <b>'30px'</b></p>
-   - <p style="color: lightblue;">You can also set this option to <b>'auto'</b> too!</p>
+2. The `Cfg.MinHeight` and `Cfg.MinWidth` properties enforce minimum sizes:
+   - If `Cfg.MinWidth` is set to `'30px'`, the width cannot be lower than `'30px'`.
+   - You can also set this option to `'auto'`.
 
 <br>
 
-3. <p>The <b>Cfg.MaxHeight</b> and <b>Cfg.MaxWidth</b> are designed to force the maximum possible size!</p>
-   
-   - <p>This means that when the <b>Cfg.MaxWidth</b> is set to <b>'300px'</b>, the width can not be higher than <b>'300px'</b></p>
-   - <p style="color: lightblue;">You can also set this option to <b>'auto'</b> too!</p>
+3. The `Cfg.MaxHeight` and `Cfg.MaxWidth` properties enforce maximum sizes:
+   - If `Cfg.MaxWidth` is set to `'300px'`, the width cannot exceed `'300px'`.
+   - You can also set this option to `'auto'`.
 
 <br>
 
-4. <p>The <b>Cfg.WidthSize</b> and <b>Cfg.WidthSize</b> are designed to change the actual notification size.<p>
-   
-   - <p style="color: red;">You can't set these values to lower than <b>Cfg.MinHeight</b> and <b>Cfg.MinWidth</b> values!</p>
+4. The `Cfg.WidthSize` and `Cfg.HeightSize` properties change the actual notification size.
+   - You cannot set these values lower than `Cfg.MinHeight` and `Cfg.MinWidth` values.
 
 <br>
 <br>
@@ -264,8 +266,9 @@
 
 ## <p class=glow>Modifying Icons</p> <a name = "icon"></a>
 
-- You are able to modify the icons size of them!
-1. <p>Find the following codes in the config.lua file for adjusting the logo Size</p>
+- Adjust the size of the icons!
+
+1. Find the following code in the `config.lua` file to adjust the logo size:
 
     ```lua
     Cfg.ImageSize = '24px'
@@ -273,10 +276,9 @@
 
 <br>
 
-2. <p>For changing the images, goto <b></b> folder and simply replace the images</p>
-   
-   - <p style="color: yellow;">Make sure to use <b>PNG</b> formatted images!</p>
-   - <p style="color: red;">Images must have transparent background</p>
+2. To change the images, go to the appropriate folder and replace the images:
+   - Ensure to use **PNG** formatted images!
+   - Images must have a transparent background.
 
 <br>
 <br>
@@ -284,11 +286,11 @@
 
 ## <p class=glow>Other Settings</p> <a name = "other"></a>
 
-- <p>You can modify the default duration. This is useful when the duration is not provided while sending the notifications</p> 
-1. <p>Find the following code in the config.lua file for adjusting the logo Size</p>
-    
-    - <p style="color: lightblue;">Time is in milliseconds</p>
+- Modify the default duration of notifications.
 
+1. Locate the following code in the `config.lua` file:
+    - Time is in milliseconds.
+    
     ```lua
     Cfg.DefaultDuration = 5000
     ```
@@ -296,10 +298,9 @@
 <br>
 <br>
 
-- <p>You can modify the default title. This is useful when the title is not provided while sending the notifications</p>
+- To modify the default title of notifications.
 
-    - <p style="color: lightblue;">Also you are able to force the use of default title on all notifications!</p> 
-1. <p>Find the following codes in the config.lua file</p>
+1. Find the following codes in the `config.lua` file:
 
     ```lua
     Cfg.DefaultTitle = "Code Wizards" 
@@ -308,35 +309,5 @@
 
 <br>
 
-2. <p>To modify the title, simply edit <b>Cfg.DefaultTitle</b> value</p>
-
-3. <p>To force the use of default title on all notifications, simply edit <b>Cfg.ForceDefaultTitle</b> value</p>
-
-
-
-<style>
-    @keyframes glow {
-        from {
-            text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
-        }
-        to {
-            text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
-        }
-    }
-
-    .glow {
-        font-size: 25px;
-        color: #1ff;
-        animation: glow 1s ease-in-out infinite alternate;
-    }
-
-    p {
-        font-size: 15px;
-    }
-
-    b {
-        font-size: 13px;
-        color: white;
-        background-color: #646464;
-    }
-</style>
+2. To change the title, simply edit the `Cfg.DefaultTitle` value.
+3. To force the use of the default title on all notifications, edit the `Cfg.ForceDefaultTitle` value.
