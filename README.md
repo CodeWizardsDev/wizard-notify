@@ -6,7 +6,9 @@
 
 <h3 align="center">Code Wizards Notification System</h3>
 
+
 ## 📝 Table of Contents
+- [Discord](https://discord.gg/ZBvacHyczY)
 - [Wiki](./wiki/README.md)
 - [Todo](#todo)
 - [Dependencies](#dependencies)
