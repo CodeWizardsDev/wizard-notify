@@ -1,19 +1,10 @@
 <p align="center">
   <a href="" rel="noopener">
-    <img src="" alt="Project logo">
+    <img src="https://github.com/user-attachments/assets/3c84c7f5-118d-4b10-b75d-7a6e79b38ab4" alt="logo">
   </a>
 </p>
 
-<h3 align="center">Project Title</h3>
-
-<div align="center">
-  <!-- Status badge indicating the current state of the project -->
-  [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-  <!-- Link to GitHub issues -->
-  [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/CodeWizardsDev/wizard-notify/issues)
-  <!-- Link to GitHub pull requests -->
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/CodeWizardsDev/wizard-notif/pulls)
-</div>
+<h3 align="center">Code Wizards Notification System</h3>
 
 ## 📝 Table of Contents
 - [Wiki](./wiki/README.md)
@@ -50,10 +41,6 @@ The project is highly customizable. You can manage the main style, borders, glow
 - 🔰 Customizable corner radius for notifications
 - 🖼️ Background color for notifications (supports HEX and RGB formats, e.g., 'rgb(0, 0, 0)')
 - 🛳️ Divider line between header and message (supports HEX and RGB formats, e.g., 'rgb(0, 0, 0)')
-- 🕶️ Border settings for notifications:
-  - Adjustable border size with suffixes (e.g., 'px', '%')
-  - Customizable border types
-  - Enable or disable each border individually
 - ✨ Glowing animation for notifications
 - 📛 Minimum and maximum allowed height for notifications
 - 📛 Actual notification height
@@ -63,6 +50,10 @@ The project is highly customizable. You can manage the main style, borders, glow
 - ⌚ Default timeout duration for notifications (in milliseconds)
 - 🗨️ Default title to use when no title is provided
 - ❗ Option to force the use of the default title instead of a provided title
+- 🕶️ Border settings for notifications:
+  - Adjustable border size with suffixes (e.g., 'px', '%')
+  - Customizable border types
+  - Enable or disable each border individually
 
 <br>
 <br>
