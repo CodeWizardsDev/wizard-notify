@@ -241,19 +241,22 @@
 <br>
 
 2. <p>The <b>Cfg.MinHeight</b> and <b>Cfg.MinWidth</b> are designed to force the minimum possible size!</p>
-   <p>This means that when the <b>Cfg.MinWidth</b> is set to <b>'30px'</b>, the width can not be lower than <b>'30px'</b></p>
-   <p style="color: lightblue;">You can also set this option to <b>'auto'</b> too!</p>
+   
+   - <p>This means that when the <b>Cfg.MinWidth</b> is set to <b>'30px'</b>, the width can not be lower than <b>'30px'</b></p>
+   - <p style="color: lightblue;">You can also set this option to <b>'auto'</b> too!</p>
 
 <br>
 
 3. <p>The <b>Cfg.MaxHeight</b> and <b>Cfg.MaxWidth</b> are designed to force the maximum possible size!</p>
-   <p>This means that when the <b>Cfg.MaxWidth</b> is set to <b>'300px'</b>, the width can not be higher than <b>'300px'</b></p>
-   <p style="color: lightblue;">You can also set this option to <b>'auto'</b> too!</p>
+   
+   - <p>This means that when the <b>Cfg.MaxWidth</b> is set to <b>'300px'</b>, the width can not be higher than <b>'300px'</b></p>
+   - <p style="color: lightblue;">You can also set this option to <b>'auto'</b> too!</p>
 
 <br>
 
 4. <p>The <b>Cfg.WidthSize</b> and <b>Cfg.WidthSize</b> are designed to change the actual notification size.<p>
-   <p style="color: red;">You can't set these values to lower than <b>Cfg.MinHeight</b> and <b>Cfg.MinWidth</b> values!</p>
+   
+   - <p style="color: red;">You can't set these values to lower than <b>Cfg.MinHeight</b> and <b>Cfg.MinWidth</b> values!</p>
 
 <br>
 <br>
@@ -271,8 +274,9 @@
 <br>
 
 2. <p>For changing the images, goto <b></b> folder and simply replace the images</p>
-   <p style="color: yellow;">Make sure to use <b>PNG</b> formatted images!</p>
-   <p style="color: red;">Images must have transparent background</p>
+   
+   - <p style="color: yellow;">Make sure to use <b>PNG</b> formatted images!</p>
+   - <p style="color: red;">Images must have transparent background</p>
 
 <br>
 <br>
@@ -281,17 +285,32 @@
 ## <p class=glow>Other Settings</p> <a name = "other"></a>
 
 - <p>You can modify the default duration. This is useful when the duration is not provided while sending the notifications</p> 
-1. <p>Find the following codes in the config.lua file for adjusting the logo Size</p>
+1. <p>Find the following code in the config.lua file for adjusting the logo Size</p>
+    
+    - <p style="color: lightblue;">Time is in milliseconds</p>
 
     ```lua
     Cfg.DefaultDuration = 5000
     ```
 
 <br>
+<br>
 
-2. <p>For changing the images, goto <b></b> folder and simply replace the images</p>
-   <p style="color: yellow;">Make sure to use <b>PNG</b> formatted images!</p>
-   <p style="color: red;">Images must have transparent background</p>
+- <p>You can modify the default title. This is useful when the title is not provided while sending the notifications</p>
+
+    - <p style="color: lightblue;">Also you are able to force the use of default title on all notifications!</p> 
+1. <p>Find the following codes in the config.lua file</p>
+
+    ```lua
+    Cfg.DefaultTitle = "Code Wizards" 
+    Cfg.ForceDefaultTitle = false  
+    ```
+
+<br>
+
+2. <p>To modify the title, simply edit <b>Cfg.DefaultTitle</b> value</p>
+
+3. <p>To force the use of default title on all notifications, simply edit <b>Cfg.ForceDefaultTitle</b> value</p>
 
 
 
