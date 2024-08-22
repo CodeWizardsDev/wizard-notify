@@ -1,0 +1,67 @@
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px var(--color);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--color);
+    }
+    100% {
+        box-shadow: 0 0 5px var(--color);
+    }
+}
+
+body {
+    position: fixed;
+    right: 5%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.notification {
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Add transform transition */
+    transform: translateY(10px); /* Start slightly lower */
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+    animation: glow 1.5s infinite; /* Apply the glow animation */
+}
+
+.notification.hide {
+    opacity: 0;
+    transform: translateY(10px); /* Move down while fading out */
+}
+
+.notification-header {
+    display: flex;
+    align-items: center; 
+}
+
+.notification-icon {
+    margin-right: 10px;
+}
+
+.notification-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.notification-message {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.border {
+    margin: 12px 0;
+    height: 2px;
+}
