@@ -1,4 +1,5 @@
 ## <p>Contents</p>
+- [Creating custom type](#type)
 - [Modifying the location](#loc)
 - [Modifying the corners](#corners)
 - [Custom background and text color](#bg-color)
@@ -7,6 +8,37 @@
 - [Modifying the height and width](#height-width)
 - [Modifying Icons](#icon)
 - [Other Settings](#other)
+
+<br>
+<br>
+<br>
+
+## <p>Modifying The Location</p> <a name = "loc"></a>
+- You can modify the location of the notification!
+
+1. To create custom notification types, find the following code in the `web/index.js` file:
+
+    ```js
+    const actionStyles = {
+        success: { color: '#00ff37', image: '../img/success.png' },
+        error: { color: '#ff0000', image: '../img/error.png' },
+        info: { color: '#0059ff', image: '../img/info.png' },
+        warning: { color: '#ff8800', image: '../img/warning.png' },
+        general: { color: '#aaaaaa', image: '../img/general.png' },
+        sms: { color: '#42b387', image: '../img/sms.png' },
+    };
+    ```
+<br>
+
+2. Now simply use the followinng Template using our wiki below!
+    - name: This is the notification type name! Don't use ' or ` or " for it!
+    - color: This is the color of the custom type! Supports HEX and RGB formats. (e.g., 'rgb(0, 0, 0)')
+    - image: This is the icon path. PNG file is recommended! paste the image in the img folder and rename it to everything you want. then replace 'FILE_NAME' with the image name. (e.g., '../img/image1.png')
+    ```js
+    const actionStyles = {
+        name: { color: '', image: '../img/FILE_NAME.png' },
+    };
+    ```
 
 <br>
 <br>
