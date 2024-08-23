@@ -13,10 +13,13 @@
 <br>
 <br>
 
-## <p>Modifying The Location</p> <a name = "loc"></a>
-- You can modify the location of the notification!
+## Creating Custom Notification Types <a name="type"></a>
 
-1. To create custom notification types, find the following code in the `web/index.js` file:
+You can create custom types of notifications!
+
+### Step 1: Locate the Code
+
+To create custom notification types, open the `web/index.js` file and find the following code:
 
     ```js
     const actionStyles = {
@@ -28,15 +31,34 @@
         sms: { color: '#42b387', image: '../img/sms.png' },
     };
     ```
+
 <br>
 
-2. Now simply use the followinng Template using our wiki below!
-    - name: This is the notification type name! Don't use ' or ` or " for it!
-    - color: This is the color of the custom type! Supports HEX and RGB formats. (e.g., 'rgb(0, 0, 0)')
-    - image: This is the icon path. PNG file is recommended! paste the image in the img folder and rename it to everything you want. then replace 'FILE_NAME' with the image name. (e.g., '../img/image1.png')
+### Step 2: Use the Template
+
+Now, use the following template to create your custom notification type:
+
+- **name**: This is the notification type name! Avoid using single quotes (`'`), double quotes (`"`), or backticks (`` ` ``).
+- **color**: This is the color of the custom type! You can use HEX or RGB formats (e.g., `'rgb(0, 0, 0)'`).
+- **image**: This is the icon path. It is recommended to use a PNG file. Place the image in the `img` folder and rename it as desired. Replace `FILE_NAME` with the name of your image (e.g., `'../img/image1.png'`).
+
+Here’s how the template looks:
+
     ```js
     const actionStyles = {
         name: { color: '', image: '../img/FILE_NAME.png' },
+    };
+    ```
+
+### Example of Adding a Custom Notification Type
+
+To add a custom notification type, you can do something like this:
+
+Feel free to customize the name, color, and image path according to your preferences!
+
+    ```js
+    actionStyles.customType = {
+        color: 'rgb(255, 165, 0)', image: '../img/custom_icon.png' 
     };
     ```
 
