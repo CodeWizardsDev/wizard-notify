@@ -3,7 +3,6 @@ local DataRadius = '0px'
 local DataCustomRadius = Cfg.CustomRadius
 local DataDiv = Cfg.Divider
 local DataDivCol = Cfg.DividerColor
-local DataDuration = Cfg.DefaultDuration
 local DataMinHeight = Cfg.MinHeight
 local DataMaxHeight = Cfg.MaxHeight
 local DataMinWidth = Cfg.MinWidth
@@ -18,15 +17,13 @@ local DataBotBorder = Cfg.Boarders.Bottom
 local DataGlow = Cfg.Glowing
 local DataTitleC = Cfg.TitleColor
 local DataTextC = Cfg.MessageColor
-local DataType = 'info'
 local DataBG = Cfg.BackGround
 local DataTitle = Cfg.DefaultTitle
 local DataForceTitle = Cfg.ForceDefaultTitle
-local DataMessage = 'NO INPUT MESSAGE!'
 local DataLocRight, DataLocLeft, DataLocTop = nil, nil, nil
-
-local AUTO = 'auto'
-local FIT_CONTENT = 'fit-content'
+local DataHeight = (Cfg.HeightSize == 'auto') and 'fit-content' or Cfg.HeightSize
+local DataWidth = (Cfg.WidthSize == 'auto') and 'fit-content' or Cfg.WidthSize
+local location = Cfg.LocationMapping[Cfg.Location]
 
 if DataCorners == 'super-rounded' then
     DataRadius = '30px'
@@ -36,7 +33,6 @@ elseif DataCorners == 'custom' then
     DataRadius = DataCustomRadius
 end
 
-local location = Cfg.LocationMapping[Cfg.Location]
 if location then
     DataLocRight = location.right
     DataLocLeft = location.left
@@ -46,14 +42,11 @@ else
     DataLocTop = '50%'
 end
 
-local DataHeight = (Cfg.HeightSize == AUTO) and FIT_CONTENT or Cfg.HeightSize
-local DataWidth = (Cfg.WidthSize == AUTO) and FIT_CONTENT or Cfg.WidthSize
-
 function Send(title, message, dur, type)
-    DataDuration = dur or DataDuration
-    DataType = type or DataType
+    local DataDuration = dur or Cfg.DefaultDuration
+    local DataType = type or 'info'
+    local DataMessage = message or 'NO INPUT MESSAGE!'
     if not DataForceTitle then DataTitle = title or DataTitle end
-    DataMessage = message or DataMessage
     SendNUIMessage({
         action = DataType,
         customradius = DataRadius,
@@ -82,15 +75,16 @@ function Send(title, message, dur, type)
         minwidth = DataMinWidth,
         maxwidth = DataMaxWidth,
         imgsize = DataImgSize,
-        suimage = '../img/success.png',
-        erimage = '../img/error.png',
-        inimage = '../img/info.png',
-        waimage = '../img/warning.png',
-        geimage = '../img/general.png',
-        smimage = '../img/sms.png',
     })
 end
 
+RegisterNetEvent('wizard-notify:Send')
+AddEventHandler('wizard-notify:Send', function(title, message, dur, type)
+	Send(title, message, dur, type)
+end)
+
+
+-- You can delete this section, this is just an example!
 RegisterCommand('testnotify', function()
     local notifications = {
         {"SUCCESS", "John successfully ate you"},

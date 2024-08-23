@@ -1,12 +1,12 @@
 const body = document.getElementById('body');
 const notificationContainer = document.getElementById('notification-container');
 const actionStyles = {
-    success: { color: '#00ff37', image: 'suimage' },
-    error: { color: '#ff0000', image: 'erimage' },
-    info: { color: '#0059ff', image: 'inimage' },
-    warning: { color: '#ff8800', image: 'waimage' },
-    general: { color: '#aaaaaa', image: 'geimage' },
-    sms: { color: '#42b387', image: 'smimage' },
+    success: { color: '#00ff37', image: '../img/success.png' },
+    error: { color: '#ff0000', image: '../img/error.png' },
+    info: { color: '#0059ff', image: '../img/info.png' },
+    warning: { color: '#ff8800', image: '../img/warning.png' },
+    general: { color: '#aaaaaa', image: '../img/general.png' },
+    sms: { color: '#42b387', image: '../img/sms.png' },
 };
 
 window.addEventListener('message', function(event) {
@@ -28,7 +28,7 @@ window.addEventListener('message', function(event) {
         notificationHeader.className = 'notification-header';
         
         const icon = document.createElement('img');
-        icon.src = event.data[style.image] || '';
+        icon.src = style.image || '';
         icon.className = 'notification-icon';
         icon.style.width = event.data.imgsize || 'auto';
         icon.style.height = event.data.imgsize || 'auto';
