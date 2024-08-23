@@ -93,13 +93,13 @@ Cfg.ForceDefaultTitle = false
 -- You can use 'top', 'right', 'left' for positioning
 -- If not specified, the tag will default to 'auto'
 Cfg.LocationMapping = {
-    ['top'] = {right = '50%', top = '94%'},  -- Centered at the top
-    ['top-right'] = {right = '1%', top = '94%'},  -- Top right corner
-    ['top-left'] = {left = '1%', top = '94%'},  -- Top left corner
+    ['top'] = {right = '50%', top = '6%'},  -- Centered at the top
+    ['top-right'] = {right = '1%', top = '6%'},  -- Top right corner
+    ['top-left'] = {left = '1%', top = '6%'},  -- Top left corner
     ['center'] = {right = '50%', top = '35%'},  -- Centered
     ['center-right'] = {right = '1%', top = '35%'},  -- Center right
     ['center-left'] = {left = '1%', top = '35%'},  -- Center left
-    ['bottom'] = {right = '50%', top = '6%'},  -- Centered at the bottom
-    ['bottom-right'] = {right = '1%', top = '6%'},  -- Bottom right corner
-    ['bottom-left'] = {left = '1%', top = '6%'},  -- Bottom left corner
+    ['bottom'] = {right = '50%', top = '88%'},  -- Centered at the bottom
+    ['bottom-right'] = {right = '1%', top = '88%'},  -- Bottom right corner
+    ['bottom-left'] = {left = '1%', top = '88%'},  -- Bottom left corner
 }
