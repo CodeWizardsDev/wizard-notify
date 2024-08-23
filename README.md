@@ -10,12 +10,25 @@
 ## 📝 Table of Contents
 - [Discord](https://discord.gg/ZBvacHyczY)
 - [Wiki](./wiki/README.md)
+- [ShowCase](#showcase)
 - [Todo](#todo)
 - [Dependencies](#dependencies)
 - [Future Scope](#future_scope)
 - [Setting up](#getting_started)
 - [Usage](#usage)
 - [Authors](#authors)
+
+<br>
+<br>
+
+## 🖼️ ShowCase <a name="showcase"></a>
+
+![warning](https://github.com/user-attachments/assets/992c9caa-fe36-4513-b0b5-638b36c1c8c0)
+![success](https://github.com/user-attachments/assets/6886ce37-2543-4bf6-ab77-7314417688a2)
+![sms](https://github.com/user-attachments/assets/77c261e2-1151-4bc3-9bd9-a3e827a3a4c8)
+![info](https://github.com/user-attachments/assets/87709f5e-c9d6-4cfb-822a-0ab9f107ea44)
+![general](https://github.com/user-attachments/assets/69aa9dc0-3e73-4f9c-bf02-6c0ef8977e83)
+![error](https://github.com/user-attachments/assets/8940a287-826d-4750-996f-e2bffe08ef25)
 
 <br>
 <br>
