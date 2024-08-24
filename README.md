@@ -97,7 +97,7 @@ ensure wizard-notify
 - To send notifications from a client-side file, use the following code:
 
 ```lua
-exports['wizard-notif']:Send('Title', 'Message', Time, 'type')
+exports['wizard-notify']:Send('Title', 'Message', Time, 'type')
 ```
 <br>
 
